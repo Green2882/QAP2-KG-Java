@@ -58,7 +58,7 @@ public class Money {
             return 1; // greater than
 
         } else {
-            return -1; // less tahn
+            return -1; // less than
         }
     }
 
@@ -66,6 +66,13 @@ public class Money {
     public boolean equals(Money anotherObject) {
 
         return (this.dollars == anotherObject.dollars && this.cents == anotherObject.cents);
+    }
+
+    public String toString() {
+
+        double total = this.dollars + (this.cents / 100.00);
+
+        return ("Total: $" + String.format("%.2f", total));
     }
 
 }
