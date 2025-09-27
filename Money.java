@@ -49,4 +49,23 @@ public class Money {
         return new Money(totalDollars + (totalCents / 100.0));
     }
 
+    // compareTo method
+    public int compareTo(Money anotherObject) {
+        if (this.dollars == anotherObject.dollars && this.cents == anotherObject.cents) {
+            return 0; // equal
+        } else if (this.dollars > anotherObject.dollars
+                || (this.dollars == anotherObject.dollars && this.cents > anotherObject.cents)) {
+            return 1; // greater than
+
+        } else {
+            return -1; // less tahn
+        }
+    }
+
+    // equals method
+    public boolean equals(Money anotherObject) {
+
+        return (this.dollars == anotherObject.dollars && this.cents == anotherObject.cents);
+    }
+
 }
