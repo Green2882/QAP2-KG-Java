@@ -11,7 +11,7 @@ public class CreditCard {
     public CreditCard(Person newCardHolder, Money limit) {
 
         this.owner = newCardHolder;
-        this.creditLimit = limit;
+        this.creditLimit = new Money(limit);
         this.balance = new Money(0.0);
     }
 
@@ -24,7 +24,7 @@ public class CreditCard {
     // getCreditLimit method
     public Money getCreditLimit() {
 
-        return new Money(this.balance);
+        return new Money(this.creditLimit);
     }
 
     // getPersonal method
