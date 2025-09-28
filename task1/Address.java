@@ -20,6 +20,6 @@ public class Address {
     // toString method
     public String toString() {
 
-        return (this.street + ", " + this.city + ", " + this.state + ", " + this.zip);
+        return (this.street + ", " + this.city + ", " + this.state + "\n" + this.zip);
     }
 }
