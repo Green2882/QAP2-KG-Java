@@ -7,7 +7,7 @@ public class Person {
     private String firstName;
     private Address home;
 
-    // Contructor (uml did not ask directly ask for this but unsure how i'd create person in demo class without)
+    // Contructor (uml did not directly ask for this but unsure how i'd create person in demo class without)
     public Person(String lastName, String firstName, Address home) {
 
         this.lastName = lastName;
