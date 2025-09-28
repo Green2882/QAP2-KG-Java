@@ -12,6 +12,31 @@ public class CreditCardDemo {
             final Money THIRD_AMOUNT = new Money(25);
             final Money FOURTH_AMOUNT = new Money(990);
 
+            Person owner = new Person("Christie", "Diane",
+                    new Address("237J Harvey Hall", "Menomonie", "WI", "54751"));
+            CreditCard visa = new CreditCard(owner, LIMIT);
+            System.out.println(visa.getPersonal());
+            System.out.println("Balance: " + visa.getBalance());
+            System.out.println("Credit Limit: " + visa.getCreditLimit());
+            System.out.println("Attempt to charge: " + FIRST_AMOUNT);
+            visa.charge(FIRST_AMOUNT);
+            System.out.println("Balance: " + visa.getBalance());
+            System.out.println("Attempt to charge: " + SECOND_AMOUNT);
+            visa.charge(SECOND_AMOUNT);
+            System.out.println("Balance: " + visa.getBalance());
+            System.out.println("Attempt to pay: " + THIRD_AMOUNT);
+            visa.payment(THIRD_AMOUNT);
+            System.out.println("Balance: " + visa.getBalance());
+            System.out.println("Attempt to charge: " + FOURTH_AMOUNT);
+            visa.charge(FOURTH_AMOUNT);
+            System.out.println("Balance : " + visa.getBalance());
+
+            /* Exepcted out put shows it should have:
+             * Attempt to charge: $200
+             * Charge $200
+             * the code given in main does not have the second charge line being printed and it seems redundant to have the
+             * charge appear twice so i did not include
+             */
         }
     }
 }
