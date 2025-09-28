@@ -73,7 +73,7 @@ public class Money {
 
         double total = this.dollars + (this.cents / 100.00);
 
-        return ("Total: $" + String.format("%.2f", total));
+        return (String.format("%.2f", total));
     }
 
 }
