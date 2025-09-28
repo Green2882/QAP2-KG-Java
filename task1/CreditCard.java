@@ -50,8 +50,8 @@ public class CreditCard {
         Money newBalance = this.balance.subtract(amount);
         this.balance = newBalance;
 
-        /* Did not specify if they can overpay their balance and have credits or not so i allowed them to.
-        I do however understand if that was the case, i would use the same if statementt as in add method
+        /* Did not specify in assignment if they can overpay their balance and have credits or not so I allowed them to.
+        I do however understand if that was the case, i would use the same if statement as in add method
         and just compare to see if payment exceeds balance and throw error if it did*/
     }
 }
