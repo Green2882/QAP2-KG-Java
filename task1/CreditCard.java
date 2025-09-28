@@ -13,4 +13,16 @@ public class CreditCard {
         this.owner = newCardHolder;
         this.creditLimit = limit;
     }
+
+    // getBalance method
+    public Money getBalance() {
+
+        return new Money(this.balance);
+    }
+
+    // getCreditLimit method
+    public Money getCreditLimit() {
+
+        return new Money(this.balance);
+    }
 }
