@@ -25,4 +25,10 @@ public class CreditCard {
 
         return new Money(this.balance);
     }
+
+    // getPersonal method
+    public String getPersonal() {
+
+        return (this.owner);
+    }
 }
