@@ -29,6 +29,29 @@ public class CreditCard {
     // getPersonal method
     public String getPersonal() {
 
-        return (this.owner);
+        return (this.owner.toString());
+    }
+
+    // charge method
+    public void charge(Money amount) {
+
+        Money newBalance = this.balance.add(amount);
+
+        if (newBalance.compareTo(this.creditLimit) > 0) {
+            System.out.println("Error - charge exceeds credit limit");
+        } else {
+            this.balance = newBalance;
+        }
+    }
+
+    // payment method
+    public void payment(Money amount) {
+
+        Money newBalance = this.balance.subtract(amount);
+        this.balance = newBalance;
+
+        /* Did not specify if they can overpay their balance and have credits or not so i allowed them to.
+        I do however understand if that was the case, i would use the same if statementt as in add method
+        and just compare to see if payment exceeds balance and throw error if it did*/
     }
 }
