@@ -12,6 +12,7 @@ public class CreditCard {
 
         this.owner = newCardHolder;
         this.creditLimit = limit;
+        this.balance = new Money(0.0);
     }
 
     // getBalance method
