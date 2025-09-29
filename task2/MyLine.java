@@ -18,4 +18,26 @@ public class MyLine {
         this.begin = begin;
         this.end = end;
     }
+
+    // Getter and setter for begin
+    public MyPoint getBegin() {
+
+        return this.begin;
+    }
+
+    public void setBegin(MyPoint begin) {
+
+        this.begin = begin;
+    }
+
+    // Getters and setter for end
+    public MyPoint getEnd() {
+
+        return this.end;
+    }
+
+    public void setEnd(MyPoint end) {
+
+        this.end = end;
+    }
 }
