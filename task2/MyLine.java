@@ -118,4 +118,10 @@ public class MyLine {
         return Math.atan2(yDiff, xDiff);
     }
 
+    // toString method
+    public String toString() {
+
+        return "MyLine[begin=" + begin + ",end=" + end + "]";
+    }
+
 }
