@@ -40,4 +40,26 @@ public class MyLine {
 
         this.end = end;
     }
+
+    // Getters and setters for begin x/y
+    public int getBeginX() {
+
+        return begin.getX();
+    }
+
+    public void setBeginX(int x) {
+
+        begin.setX(x);
+    }
+
+    public int getBeginY() {
+
+        return begin.getY();
+    }
+
+    public void setBeginY(int y) {
+
+        begin.setY(y);
+    }
+
 }
