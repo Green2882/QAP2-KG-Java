@@ -37,5 +37,9 @@ public class TestMyLine {
         System.out.println("New Lines after using setters");
         System.out.println(l1);
         System.out.println(l2);
+
+        // Test getLength and getGradient
+        System.out.println("Length from l1 beginning to end: " + l1.getLength());
+        System.out.println("Gradient of l2: " + l2.getGradient());
     }
 }
