@@ -25,5 +25,17 @@ public class TestMyLine {
         System.out.println("l1 begin XY = " + Arrays.toString(l1.getBeginXY()));
         System.out.println("l2 end XY = " + Arrays.toString(l2.getEndXY()));
 
+        // Test setters
+        l1.setBeginX(2);
+        l1.setBeginY(1);
+        l1.setEndX(4);
+        l1.setEndY(2);
+        l2.setBeginXY(1, 0);
+        l2.setEndXY(2, 1);
+
+        // Print new points using toString
+        System.out.println("New Lines after using setters");
+        System.out.println(l1);
+        System.out.println(l2);
     }
 }
