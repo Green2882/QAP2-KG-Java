@@ -83,4 +83,25 @@ public class MyLine {
         end.setY(y);
     }
 
+    // Getters and setters for begin/end XY
+    public int[] getBeginXY() {
+
+        return begin.getXY();
+    }
+
+    public void setBeginXY(int x, int y) {
+
+        begin.setXY(x, y);
+    }
+
+    public int[] getEndXY() {
+
+        return end.getXY();
+    }
+
+    public void setEndXY(int x, int y) {
+
+        end.setXY(x, y);
+    }
+
 }
