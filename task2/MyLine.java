@@ -104,4 +104,18 @@ public class MyLine {
         end.setXY(x, y);
     }
 
+    // getLength method
+    public double getLength() {
+
+        return begin.distance(end);
+    }
+
+    // getGradient method
+    public double getGradient() {
+
+        int xDiff = end.getX() - begin.getX();
+        int yDiff = end.getY() - begin.getY();
+        return Math.atan2(yDiff, xDiff);
+    }
+
 }
