@@ -62,4 +62,25 @@ public class MyLine {
         begin.setY(y);
     }
 
+    // Getters and setters for end x/y
+    public int getEndX() {
+
+        return end.getX();
+    }
+
+    public void setEndX(int x) {
+
+        end.setX(x);
+    }
+
+    public int getEndY() {
+
+        return end.getY();
+    }
+
+    public void setEndY(int y) {
+
+        end.setY(y);
+    }
+
 }
