@@ -104,4 +104,10 @@ public class MyRectangle {
 
         bottomRight.setXY(x, y);
     }
+
+    // toString method
+    public String toString() {
+
+        return "MyRectangle[topLeft=" + topLeft + ",bottomRight=" + bottomRight + "]";
+    }
 }
