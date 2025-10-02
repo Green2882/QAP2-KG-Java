@@ -42,4 +42,45 @@ public class MyRectangle {
 
         this.bottomRight = bottomRight;
     }
+
+    // Getters and setters for individual x and y
+    public int getTopLeftX() {
+
+        return topLeft.getX();
+    }
+
+    public void setTopLeftX(int x) {
+
+        topLeft.setX(x);
+    }
+
+    public int getTopLeftY() {
+
+        return topLeft.getY();
+    }
+
+    public void setTopLeftY(int y) {
+
+        topLeft.setY(y);
+    }
+
+    public int getBottomRightX() {
+
+        return bottomRight.getX();
+    }
+
+    public void setBottomRightX(int x) {
+
+        bottomRight.setX(x);
+    }
+
+    public int getBottomRightY() {
+
+        return bottomRight.getY();
+    }
+
+    public void setBottomRightY(int y) {
+
+        bottomRight.setY(y);
+    }
 }
