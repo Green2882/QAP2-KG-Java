@@ -110,4 +110,25 @@ public class MyRectangle {
 
         return "MyRectangle[topLeft=" + topLeft + ",bottomRight=" + bottomRight + "]";
     }
+
+    // Methods to calculate width, height, area, and perimeter
+    public int getWidth() {
+
+        return Math.abs(bottomRight.getX() - topLeft.getX());
+    }
+
+    public int getHeight() {
+
+        return Math.abs(bottomRight.getY() - topLeft.getY());
+    }
+
+    public int getArea() {
+
+        return getWidth() * getHeight();
+    }
+
+    public int getPerimeter() {
+
+        return 2 * (getWidth() + getHeight());
+    }
 }
