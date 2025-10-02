@@ -83,4 +83,25 @@ public class MyRectangle {
 
         bottomRight.setY(y);
     }
+
+    // Getters and setters for topLeft and bottomRight XY
+    public int[] getTopLeftXY() {
+
+        return topLeft.getXY();
+    }
+
+    public void setTopLeftXY(int x, int y) {
+
+        topLeft.setXY(x, y);
+    }
+
+    public int[] getBottomRightXY() {
+
+        return bottomRight.getXY();
+    }
+
+    public void setBottomRightXY(int x, int y) {
+
+        bottomRight.setXY(x, y);
+    }
 }
