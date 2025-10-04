@@ -32,6 +32,18 @@ public class TestMyRectangle {
         System.out.println("Updated rectangles:");
         System.out.println(r1);
         System.out.println(r2);
+
+        // Display width, height, area, and perimeter of each rectangle
+        System.out.println();
+        System.out.println("r1 width = " + r1.getWidth());
+        System.out.println("r1 height = " + r1.getHeight());
+        System.out.println("r1 area = " + r1.getArea());
+        System.out.println("r1 perimeter = " + r1.getPerimeter());
+        System.out.println();
+        System.out.println("r2 width = " + r2.getWidth());
+        System.out.println("r2 height = " + r2.getHeight());
+        System.out.println("r2 area = " + r2.getArea());
+        System.out.println("r2 perimeter = " + r2.getPerimeter());
     }
 
 }
