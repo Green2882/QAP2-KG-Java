@@ -14,8 +14,10 @@ public class TestMyRectangle {
 
         // Display original rectangles
         System.out.println();
+        System.out.println("Original Rectangles:");
         System.out.println(r1);
         System.out.println(r2);
 
+        // Update rectangle points using different methods
     }
 }
