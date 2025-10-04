@@ -53,4 +53,18 @@ public class CampusMap {
         fountains.add(fountain);
         return fountain;
     }
+
+    // Method to add the length of all walkways on campus
+    public double calculateTotalWalkwayLength() {
+
+        double totalLength = 0;
+        for (int i = 0; i < walkways.size(); i++) {
+
+            MyLine line = walkways.get(i);
+            double length = line.getLength();
+
+            totalLength += length;
+        }
+        return totalLength;
+    }
 }
