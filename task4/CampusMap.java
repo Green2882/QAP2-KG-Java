@@ -82,4 +82,29 @@ public class CampusMap {
 
         return totalArea;
     }
+
+    // Method to check if a walkway exists between two buildings
+    public boolean isWalkwayFromTo(MyRectangle from, MyRectangle to) {
+
+        int fromCenterX = (from.getTopLeftX() + from.getBottomRightX()) / 2;
+        int fromCenterY = (from.getTopLeftY() + from.getBottomRightY()) / 2;
+
+        int toCenterX = (to.getTopLeftX() + to.getBottomRightX()) / 2;
+        int toCenterY = (to.getTopLeftY() + to.getBottomRightY()) / 2;
+
+        for (int i = 0; i < walkways.size(); i++) {
+            MyLine line = walkways.get(i);
+
+            int lineBeginX = line.getBegin().getX();
+            int lineBeginY = line.getBegin().getY();
+            int lineEndX = line.getEnd().getX();
+            int lineEndY = line.getEnd().getY();
+
+            if (lineBeginX == fromCenterX && lineBeginY == fromCenterY
+                    && lineEndX == toCenterX && lineEndY == toCenterY) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
