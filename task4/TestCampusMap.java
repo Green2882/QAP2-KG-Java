@@ -26,5 +26,15 @@ public class TestCampusMap {
         // Create a rectangle called fountainCenter for creating walkway to fountain(as addWalkway only accepts rectangles)
         MyRectangle fountainCenter = new MyRectangle(500, 500, 500, 500);
 
+        // Add buildings and fountains to CampusMap
+        campus.addBuilding(scienceHall);
+        campus.addBuilding(library);
+        campus.addBuilding(lectureRoom1);
+        campus.addBuilding(lectureRoom2);
+        campus.addBuilding(lectureRoom3);
+        campus.addBuilding(lectureRoom4);
+        campus.addBuilding(lectureRoom5);
+        campus.addFountain(fountain);
+
     }
 }
