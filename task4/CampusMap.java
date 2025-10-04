@@ -54,7 +54,7 @@ public class CampusMap {
         return fountain;
     }
 
-    // Method to add the length of all walkways on campus
+    // Method to calculate the length of all walkways on campus
     public double calculateTotalWalkwayLength() {
 
         double totalLength = 0;
@@ -66,5 +66,20 @@ public class CampusMap {
             totalLength += length;
         }
         return totalLength;
+    }
+
+    // Method to calculate the total area of all fountains on campus
+    public double calculateTotalFountainArea() {
+
+        double totalArea = 0;
+        for (int i = 0; i < fountains.size(); i++) {
+
+            MyCircle circle = fountains.get(i);
+            double area = circle.getArea();
+
+            totalArea += area;
+        }
+
+        return totalArea;
     }
 }
