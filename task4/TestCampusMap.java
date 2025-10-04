@@ -23,5 +23,8 @@ public class TestCampusMap {
         MyPoint p1 = new MyPoint(500, 500);
         MyCircle fountain = new MyCircle(p1, 50);
 
+        // Create a rectangle called fountainCenter for creating walkway to fountain(as addWalkway only accepts rectangles)
+        MyRectangle fountainCenter = new MyRectangle(500, 500, 500, 500);
+
     }
 }
