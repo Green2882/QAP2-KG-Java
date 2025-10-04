@@ -1,5 +1,6 @@
 package task3;
 
+import java.util.Arrays;
 import task2.MyPoint;
 
 public class MyRectangle {
@@ -108,7 +109,7 @@ public class MyRectangle {
     // toString method
     public String toString() {
 
-        return "MyRectangle[topLeft=" + topLeft + ",bottomRight=" + bottomRight + "]";
+        return "MyRectangle[topLeft=" + Arrays.toString(this.getTopLeftXY()) + ",bottomRight=" + Arrays.toString(this.getBottomRightXY()) + "]";
     }
 
     // Methods to calculate width, height, area, and perimeter
