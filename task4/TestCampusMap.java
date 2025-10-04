@@ -36,5 +36,19 @@ public class TestCampusMap {
         campus.addBuilding(lectureRoom5);
         campus.addFountain(fountain);
 
+        // Create walkways
+        campus.addWalkway(scienceHall, fountainCenter);
+        campus.addWalkway(library, fountainCenter);
+        campus.addWalkway(lectureRoom1, fountainCenter);
+        campus.addWalkway(lectureRoom2, fountainCenter);
+        campus.addWalkway(lectureRoom3, fountainCenter);
+        campus.addWalkway(lectureRoom4, fountainCenter);
+        campus.addWalkway(lectureRoom5, fountainCenter);
+        campus.addWalkway(library, scienceHall);
+        campus.addWalkway(lectureRoom1, lectureRoom2);
+        campus.addWalkway(lectureRoom2, lectureRoom3);
+        campus.addWalkway(lectureRoom2, lectureRoom4);
+        campus.addWalkway(lectureRoom4, lectureRoom5);
+
     }
 }
