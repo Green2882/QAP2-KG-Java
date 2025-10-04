@@ -95,11 +95,13 @@ public class CampusMap {
         for (int i = 0; i < walkways.size(); i++) {
             MyLine line = walkways.get(i);
 
+            // Get begin/end coordinates of each walkway
             int lineBeginX = line.getBegin().getX();
             int lineBeginY = line.getBegin().getY();
             int lineEndX = line.getEnd().getX();
             int lineEndY = line.getEnd().getY();
 
+            // Check if walkway connetcs to buildings and return true if they do
             if (lineBeginX == fromCenterX && lineBeginY == fromCenterY
                     && lineEndX == toCenterX && lineEndY == toCenterY) {
                 return true;
