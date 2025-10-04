@@ -19,5 +19,19 @@ public class TestMyRectangle {
         System.out.println(r2);
 
         // Update rectangle points using different methods
+        r1.setTopLeftXY(1, 3);
+        r1.setBottomRightXY(6, 1);
+
+        r2.setTopLeftX(2);
+        r2.setTopLeftY(2);
+        r2.setBottomRightX(5);
+        r2.setBottomRightY(0);
+
+        // Display updated rectangles
+        System.out.println();
+        System.out.println("Updated rectangles:");
+        System.out.println(r1);
+        System.out.println(r2);
     }
+
 }
