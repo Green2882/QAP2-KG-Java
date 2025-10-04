@@ -35,6 +35,7 @@ public class TestCampusMap {
         campus.addBuilding(lectureRoom4);
         campus.addBuilding(lectureRoom5);
         campus.addFountain(fountain);
+        campus.addBuilding(fountainCenter);
 
         // Create walkways
         campus.addWalkway(scienceHall, fountainCenter);
@@ -50,5 +51,7 @@ public class TestCampusMap {
         campus.addWalkway(lectureRoom2, lectureRoom4);
         campus.addWalkway(lectureRoom4, lectureRoom5);
 
+        // Display total fountain area and total walkway length
+        System.out.println("Area of campus fountain: " + fountain.getArea());
     }
 }
