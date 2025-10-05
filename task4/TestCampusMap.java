@@ -55,7 +55,8 @@ public class TestCampusMap {
         System.out.println(String.format("Total area of campus fountain: %7.2f", campus.calculateTotalFountainArea()));
         System.out.println(String.format("Total length of campus walkways: %7.2f", campus.calculateTotalWalkwayLength()));
 
-        campus.addWalkway(library, lunchHall);
-
+        // Test error display of addWalkway
+        MyRectangle test = new MyRectangle(200, 250, 250, 200);
+        campus.addWalkway(library, test);
     }
 }
