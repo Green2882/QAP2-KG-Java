@@ -52,6 +52,7 @@ public class TestCampusMap {
         campus.addWalkway(lectureRoom4, lectureRoom5);
 
         // Display total fountain area and total walkway length
-        System.out.println("Area of campus fountain: " + fountain.getArea());
+        System.out.println(String.format("Total area of campus fountain: %7.2f", campus.calculateTotalFountainArea()));
+
     }
 }
