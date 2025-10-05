@@ -57,6 +57,13 @@ public class TestCampusMap {
 
         // Test error display of addWalkway
         MyRectangle test = new MyRectangle(200, 250, 250, 200);
-        campus.addWalkway(library, test);
+        campus.addWalkway(library, test); // Error prints properely
+
+        // Test isWalkwayFromTo
+        System.out.println("Walkway from library to fountain: " + campus.isWalkwayFromTo(library, fountainCenter));
+        System.out.println("Walkway from library to science hall: " + campus.isWalkwayFromTo(library, scienceHall));
+        System.out.println("Walkway from lecture room 1 to lecture room 2: " + campus.isWalkwayFromTo(lectureRoom1, lectureRoom2));
+        System.out.println("Walkway from lecture room 1 to lecture room 5: " + campus.isWalkwayFromTo(lectureRoom1, lectureRoom5));
+
     }
 }
